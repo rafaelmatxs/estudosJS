@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <script>
+
+        var num1 = prompt('Digite Um Número: ')
+        var op = prompt('SOMA ou SUBTRACAO? ')
+        var num2 = prompt('Digite UM Número: ')
+
+        function calc() {
+            num1 = parseFloat(num1)
+            num2 = parseFloat(num2)
+
+            var resultado = 0
+
+            if (op == SOMA) {
+                resultado = num1 + num2
+            } if (op == SUBTRACAO) {
+                resultado = num1 - num2
+            }
+            return resultado
+        }
+
+        document.write('O resultado é ' + calc(num1, num2, op))
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

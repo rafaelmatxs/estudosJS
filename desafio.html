@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript</title>
+        <style>
+            .estilo1 {
+                background: yellow;
+            }
+
+            .estilo2 {
+                background: red;
+            }
+
+            .estilo3 {
+                background: green;
+            }
+        </style>
+        <script>
+            function modificaCor() {
+                document.getElementById('entrada').className = 'estilo1'
+            }
+
+            function recupera() {
+                var caracteres = document.getElementById('entrada').value
+                
+                if (caracteres.length < 3) {
+                    document.getElementById('entrada').className = 'estilo2'
+                } else {
+                    document.getElementById('entrada').className = 'estilo3'
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <input type="text" id="entrada" onfocus="modificaCor()" onblur="recupera()">
+    </body>
+</html>
